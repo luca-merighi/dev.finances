@@ -1,0 +1,97 @@
+#modal-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color: var(--ice);
+    padding: 2.4rem;
+}
+
+.form {
+    max-width: 500px;
+}
+
+.form h2 {
+    margin-top: 0;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.input-group .help {
+    opacity: 0.5;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-container .cancel,
+.buttons-container button {
+    width: 48%;
+}
+
+.buttons-container .cancel {
+    background-color: transparent;
+    height: 50px;
+    text-decoration: none;
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    opacity: 0.6;
+}
+
+.buttons-container .cancel:hover {
+    opacity: 1;
+}
+
+.buttons-container .cancel:focus {
+    opacity: 1;
+    border: 2px solid var(--dark-blue);
+    outline: none;
+}
+
+.buttons-container button {
+    height: 50px;
+    border: none;
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 0.25rem;
+}
+
+.buttons-container button:hover {
+    cursor: pointer;
+    background-color: var(--light-green);
+}
